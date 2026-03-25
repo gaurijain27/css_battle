@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_battle</title>
+    <style>
+        .navbar{
+            display: flex;
+            padding: 10px;
+            justify-content: space-around;
+            width: 100%;
+            font-family: cursive;
+            align-items: center;
+            font-size: large;
+            background-color: rgb(249, 239, 226);
+        }
+        .navbar .logo img{
+            width:120px;
+            border-radius: 15px;
+            height: 80px;
+        }
+
+        .navbar .search{
+            padding: 10px;
+            border-radius: 15px;
+            border:solid black 1px;
+        }
+        .heading{
+            text-align: center;font-size: 50px;
+            font-family: cursive;
+        }
+        .content{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: space-around;
+            align-items: center;
+        }
+        .content .pic img{
+            height: 400px;
+            padding: 50px;
+        }
+        .content .text{
+            font-size: larger;
+            font-family: cursive;
+        }
+        .content .text button{
+            padding: 15px;
+            border-radius: 15px;
+            background-color: antiquewhite;
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            padding: 15px;
+            width: 100%;
+            place-items: center;
+        }
+        .cards .flwr{
+            display: grid;
+            width: 150px;
+            border-radius: 15px;
+            background-color: antiquewhite;
+            place-content: center;
+        }
+        .cards img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo" id="logo"><img src="./logo.jpg"></div>
+        <div class="home" id="home">Home</div>
+        <div class="apps" id="apps">Apps</div>
+        <div class="about" id="about">About</div>
+        <div class="contact" id="contact">Contact</div>
+        <form>
+            <input type="text" class="search" placeholder="search bar ">
+        </form>
+    </div>
+    <br><br>
+    <div class="heading">EVERYDAY FLOWERS</div><br><br>
+    <div class="content">
+        <div class="pic"><img src="./logo.jpg"></div>
+        <div class="text">
+            FLOWERS FOR YOUR LOVED ONES
+            <br><br>
+            <button>EXPLORE</button>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="flwr"><img src="./1.jpg"><br><br></div>
+        <div class="flwr"><img src="./2.jpg"><br><br></div>
+        <div class="flwr"><img src="./3.jpg"><br><br></div>
+        <div class="flwr"><img src="./4.jpg"><br><br></div>
+    </div><br><br><br><br>
+    <footer style="text-align: center;">made by gauri jain</footer>
+</body>
+</html>
